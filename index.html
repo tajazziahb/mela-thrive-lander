@@ -10,172 +10,190 @@
 <body>
 <div id="app"></div>
 <!-- Navigation -->
-    <nav class="navbar bg-base-100 px-6 py-4 shadow-sm">
-        <div class="navbar-start">
-            <div class="flex items-center">
-                <!-- Replace with actual crown icon or logo -->
-                <div class="w-8 h-8 bg-yellow-600 rounded-full"></div>
-                <span class="ml-2 text-2xl font-bold text-burgundy-800">MelaThrive</span>
-            </div>
+<nav class="navbar  px-6 py-4 shadow-sm">
+    <div class="navbar-start">
+        <div class="flex items-center">
+            <!-- Replace with actual crown icon or logo -->
+            <div class="w-8 h-8 bg-yellow-600 rounded-full"></div>
+            <span class="ml-2 text-2xl font-bold text-burgundy-800">MelaThrive</span>
         </div>
-        <div class="navbar-end">
-            <ul class="menu menu-horizontal px-1 gap-6">
-                <li><a href="#features" class="text-gray-600 hover:text-burgundy-800">Features</a></li>
-                <li><a href="#how-it-works" class="text-gray-600 hover:text-burgundy-800">How It Works</a></li>
-                <li><a href="#testimonials" class="text-gray-600 hover:text-burgundy-800">Success Stories</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero min-h-[600px] bg-gradient-to-r from-burgundy-50 to-yellow-50">
-        <div class="hero-content flex-col lg:flex-row-reverse gap-12 max-w-7xl">
-            <img src="https://placehold.co/600x800" class="max-w-sm rounded-lg shadow-2xl" />
-            <div>
-                <h1 class="text-5xl font-bold text-burgundy-900">Black entrepreneurs powering Black excellence</h1>
-                <p class="py-6 text-xl text-gray-600">Direct mentorship. Insider strategies. Unlimited growth. Transform your business vision into an empire reality.</p>
-                <div class="flex gap-4">
-                    <button class="btn bg-burgundy-800 text-white hover:bg-burgundy-900">Join as Mentee</button>
-                    <button class="btn btn-outline border-burgundy-800 text-burgundy-800 hover:bg-burgundy-50">Become a Mentor</button>
+    </div>
+    <div class="flex flex-1 justify-end px-2">
+        <div class="flex items-stretch">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="font-bold text-burgundy-800"
+                     onclick="this.nextElementSibling.classList.toggle('hidden')">Menu
                 </div>
+                <ul class="menu menu-horizontal px-1 gap-6 hidden">
+                    <li><a href="#features" class=" font-bold text-yellow-600 hover:text-burgundy-800">Features</a></li>
+                    <li><a href="#how-it-works" class=" font-bold hover:text-burgundy-800">How It Works</a></li>
+                    <li><a href="#testimonials" class="font-bold hover:text-burgundy-800">Success Stories</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- Features Section -->
-    <section id="features" class="py-20 px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-burgundy-900">Powerful Features for Growth</h2>
-            <p class="text-gray-600 mt-4">Everything you need to connect, learn, and grow your business</p>
+<!-- Hero Section -->
+<section class="hero min-h-[600px] bg-gradient-to-r from-burgundy-50 to-yellow-50">
+    <div class="hero-content flex-col lg:flex-row-reverse gap-12 max-w-7xl">
+        <img src="https://placehold.co/600x800" class="max-w-sm rounded-lg shadow-2xl"/>
+        <div>
+            <h1 class="text-5xl font-bold text-burgundy-900">Black entrepreneurs powering Black excellence</h1>
+            <p class="py-6 text-xl text-gray-600">Direct mentorship. Insider strategies. Unlimited growth. Transform
+                your business vision into an empire reality.</p>
+            <div class="flex gap-4">
+                <button class="btn bg-burgundy-800 text-bg-blue-600 hover:bg-burgundy-900">Join as Mentee</button>
+                <button class="btn btn-outline border-burgundy-800 text-burgundy-800 hover:bg-burgundy-50">Become a
+                    Mentor
+                </button>
+            </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Feature 1 -->
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-20 px-6">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-burgundy-900">Powerful Features for Growth</h2>
+        <p class="text-gray-600 mt-4">Everything you need to connect, learn, and grow your business</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <div class="w-12 h-12 bg-burgundy-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Icon placeholder -->
+                </div>
+                <h3 class="card-title">Smart Matching Algorithm</h3>
+                <p>Connect with mentors who align with your industry, goals, and vision</p>
+            </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <div class="w-12 h-12 bg-burgundy-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Icon placeholder -->
+                </div>
+                <h3 class="card-title">Service Selection</h3>
+                <p>Choose from a variety of mentorship services and expertise areas</p>
+            </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <div class="w-12 h-12 bg-burgundy-100 rounded-full flex items-center justify-center mb-4">
+                    <!-- Icon placeholder -->
+                </div>
+                <h3 class="card-title">Goal Tracking</h3>
+                <p>Set milestones and track your progress with your mentor's guidance</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-burgundy-900 text-center mb-16">How It Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-burgundy-800 rounded-full flex items-center justify-center mx-auto mb-4 text-bg-blue-600 text-xl font-bold">
+                    1
+                </div>
+                <h3 class="font-bold mb-2">Create Your Profile</h3>
+                <p class="text-gray-600">Set up your business profile and define your goals</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-burgundy-800 rounded-full flex items-center justify-center mx-auto mb-4 text-bg-blue-600 text-xl font-bold">
+                    2
+                </div>
+                <h3 class="font-bold mb-2">Match with Mentors</h3>
+                <p class="text-gray-600">Connect with experienced entrepreneurs in your field</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-burgundy-800 rounded-full flex items-center justify-center mx-auto mb-4 text-bg-blue-600 text-xl font-bold">
+                    3
+                </div>
+                <h3 class="font-bold mb-2">Start Growing</h3>
+                <p class="text-gray-600">Begin your journey to business excellence</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-burgundy-900 text-center mb-16">Testimonials </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Testimonial 1 -->
             <div class="card bg-base-100 shadow-xl">
                 <div class="card-body">
-                    <div class="w-12 h-12 bg-burgundy-100 rounded-full flex items-center justify-center mb-4">
-                        <!-- Icon placeholder -->
-                    </div>
-                    <h3 class="card-title">Smart Matching Algorithm</h3>
-                    <p>Connect with mentors who align with your industry, goals, and vision</p>
-                </div>
-            </div>
-            <!-- Feature 2 -->
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <div class="w-12 h-12 bg-burgundy-100 rounded-full flex items-center justify-center mb-4">
-                        <!-- Icon placeholder -->
-                    </div>
-                    <h3 class="card-title">Service Selection</h3>
-                    <p>Choose from a variety of mentorship services and expertise areas</p>
-                </div>
-            </div>
-            <!-- Feature 3 -->
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <div class="w-12 h-12 bg-burgundy-100 rounded-full flex items-center justify-center mb-4">
-                        <!-- Icon placeholder -->
-                    </div>
-                    <h3 class="card-title">Goal Tracking</h3>
-                    <p>Set milestones and track your progress with your mentor's guidance</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-burgundy-900 text-center mb-16">How It Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Step 1 -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-burgundy-800 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">1</div>
-                    <h3 class="font-bold mb-2">Create Your Profile</h3>
-                    <p class="text-gray-600">Set up your business profile and define your goals</p>
-                </div>
-                <!-- Step 2 -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-burgundy-800 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">2</div>
-                    <h3 class="font-bold mb-2">Match with Mentors</h3>
-                    <p class="text-gray-600">Connect with experienced entrepreneurs in your field</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-burgundy-800 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">3</div>
-                    <h3 class="font-bold mb-2">Start Growing</h3>
-                    <p class="text-gray-600">Begin your journey to business excellence</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-burgundy-900 text-center mb-16">Testimonials </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="card bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                            <div class="ml-4">
-                                <h4 class="font-bold">Sarah Johnson</h4>
-                                <p class="text-sm text-gray-600">Fashion & Retail</p>
-                            </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-600">Fashion & Retail</p>
                         </div>
-                        <p>"MelaThrive connected me with a mentor who helped me scale my boutique from one location to five in just two years."</p>
                     </div>
+                    <p>"MelaThrive connected me with a mentor who helped me scale my boutique from one location to five
+                        in just two years."</p>
                 </div>
-                <!-- Testimonial 2 -->
-                <div class="card bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
-                            <div class="ml-4">
-                                <h4 class="font-bold">Marcus Thompson</h4>
-                                <p class="text-sm text-gray-600">Tech Startup</p>
-                            </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Marcus Thompson</h4>
+                            <p class="text-sm text-gray-600">Tech Startup</p>
                         </div>
-                        <p>"The guidance I received through MelaThrive was instrumental in securing our Series A funding."</p>
                     </div>
+                    <p>"The guidance I received through MelaThrive was instrumental in securing our Series A
+                        funding."</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="py-20 px-6 bg-burgundy-800 text-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Build Your Empire?</h2>
-            <div class="flex justify-center gap-4">
-                <button class="btn bg-yellow-600 hover:bg-yellow-700 text-white">Join Now</button>
-            </div>
+<!-- CTA Section -->
+<section class="py-20 px-6 bg-burgundy-800 ">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl text-white font-bold mb-6">Ready to Build Your Empire?</h2>
+        <div class="flex justify-center gap-4">
+            <button class="btn bg-yellow-600 hover:bg-yellow-700 ">Join Now</button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer p-10 bg-base-100 text-base-content">
-        <div>
-            <div class="flex items-center">
-                <div class="w-8 h-8 bg-yellow-600 rounded-full"></div>
-                <span class="ml-2 text-2xl font-bold text-burgundy-800">MelaThrive</span>
-            </div>
-            <p>Building Black excellence through mentorship.</p>
+<!-- Footer -->
+<footer class="footer p-10 bg-base-100 text-base-content">
+    <div>
+        <div class="flex items-center">
+            <div class="w-8 h-8 bg-yellow-600 rounded-full"></div>
+            <span class="ml-2 text-2xl font-bold text-burgundy-800">MelaThrive</span>
         </div>
-        <div>
-            <span class="footer-title">Company</span>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Press kit</a>
-        </div>
-        <div>
-            <span class="footer-title">Legal</span>
-            <a class="link link-hover">Terms of use</a>
-            <a class="link link-hover">Privacy policy</a>
-            <a class="link link-hover">Cookie policy</a>
-        </div>
-    </footer>
+        <p>Building Black excellence through mentorship.</p>
+    </div>
+    <div>
+        <span class="footer-title">Company</span>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Press kit</a>
+    </div>
+    <div>
+        <span class="footer-title">Legal</span>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+    </div>
+</footer>
 
 <script type="module" src="/main.js"></script>
 </body>
