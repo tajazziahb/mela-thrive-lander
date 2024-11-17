@@ -12,6 +12,10 @@ export default {
 
         purple: {
           300: '#d8b4fe',
+        },
+
+        gray: {
+          300: '#9ca3af'
         }
       },
     },

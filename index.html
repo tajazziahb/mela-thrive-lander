@@ -10,66 +10,69 @@
 <div id="app"></div>
 
 <!-- Navigation -->
- <nav class="bg-primary p-4">
-        <div class="container mx-auto flex justify-between items-center">
+<nav class="bg-primary p-4">
+    <div class="container mx-auto flex justify-between items-center">
 
-            <!-- Brand -->
-            <div class="text-black text-2xl font-bold">
-                MelaThrive
-            </div>
-
-            <!-- Desktop Navigation -->
-            <div class="hidden md:flex space-x-4 ">
-                <a href="#features" class="text-black hover:text-purple-300">Features</a>
-                <a href="#how-it-works" class="text-black hover:text-purple-300">How It Works</a>
-                <a href="#testimonials" class="text-black hover:text-purple-300">Testimonials</a>
-                <a href="#faqs" class="text-black hover:text-purple-300">FAQs</a>
-            </div>
-            <!-- Mobile Navigation Toggle Button-->
-            <div class="md:hidden">
-                <button id="nav-toggle" class="focus:outline-none">
-                    <svg class="text-black h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+        <!-- Brand -->
+        <div class="text-black text-2xl font-bold">
+            MelaThrive
         </div>
-        <!-- Mobile Navigation Menu -->
-        <div id="nav-menu" class="hidden md:hidden">
-            <a href="#features" class="block text-black py-2 px-4 hover:bg-pink">Features</a>
-            <a href="#how-it-works" class="block text-black py-2 px-4 hover:bg-pink">How It Works</a>
-            <a href="#testimonials" class="block text-black py-2 px-4 hover:bg-pink">Testimonials</a>
-            <a href="#faqs" class="block text-black py-2 px-4 hover:bg-pink">FAQs</a>
-        </div>
-    </nav>
 
-    <script>
-        document.getElementById('nav-toggle').addEventListener('click', function() {
-            var menu = document.getElementById('nav-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
-
-<!-- Hero Section -->
-<section class="hero min-h-[600px] bg-gradient-to-r from-burgundy-50 to-yellow-50">
-    <div class="hero-content flex-col lg:flex-row-reverse gap-12">
-        <div class="hidden lg:block">
-            <img src="https://www.judson-group.com/wp-content/uploads/2019/11/adult-african-american-people-black-women-business-1181605-1140x642.jpg"
-                 alt="Hero Image" class="rounded-lg "
-            />
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-4 ">
+            <a href="#features" class="text-black hover:text-purple-300">Features</a>
+            <a href="#how-it-works" class="text-black hover:text-purple-300">How It Works</a>
+            <a href="#testimonials" class="text-black hover:text-purple-300">Testimonials</a>
+            <a href="#faqs" class="text-black hover:text-purple-300">FAQs</a>
         </div>
-        <div>
-            <h1 class="text-5xl font-bold text-burgundy-800">Black entrepreneurs powering Black excellence</h1>
-            <p class="py-6 text-xl text-black">Direct mentorship. Insider strategies. Unlimited growth. Transform
-                your business vision into an empire reality.</p>
-            <div class="flex gap-4">
-                <button class="btn bg-burgundy-800 text-white hover:bg-burgundy-900">Join as Mentee</button>
-                <button class="btn btn-outline border-burgundy-800 text-burgundy-800 hover:bg-burgundy-50">Become a
-                    Mentor
-                </button>
-            </div>
+        <!-- Mobile Navigation Toggle Button-->
+        <div class="md:hidden">
+            <button id="nav-toggle" class="focus:outline-none">
+                <svg class="text-black h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
     </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="nav-menu" class="hidden md:hidden">
+        <a href="#features" class="block text-black py-2 px-4 hover:bg-pink-500">Features</a>
+        <a href="#how-it-works" class="block text-black py-2 px-4 hover:bg-pink-500">How It Works</a>
+        <a href="#testimonials" class="block text-black py-2 px-4 hover:bg-pink-500">Testimonials</a>
+        <a href="#faqs" class="block text-black py-2 px-4 hover:bg-pink-500">FAQs</a>
+    </div>
+</nav>
+
+<script>
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+        var menu = document.getElementById('nav-menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+<!-- Hero Section -->
+<section class="hero min-h-[600px]">
+    <div class="hero-content flex-col lg:flex-row lg:justify-between gap-0 items-stretch">
+
+        <div class=" bg-gray-100 rounded-lg p-4 lg:flex-1 lg:h-full flex flex-col justify-center">
+            <h1 class="text-5xl font-bold text-black">Black entrepreneurs powering Black excellence</h1>
+            <p class="py-6 text-xl text-slate-300">Direct mentorship. Insider strategies. Unlimited growth. Transform
+                your business vision into an empire reality.</p>
+            <div class="flex gap-4">
+                <a href="#" class="btn bg-black text-white hover:bg-pink-500">Join as Mentee</a>
+                <a href="#" class="btn btn-outline border-black text-black hover:bg-purple-300">Become a Mentor
+                </a>
+            </div>
+        </div>
+        <div class="hidden lg:block lg:flex-1 lg:h-full lg:w-full">
+            <img src="https://generated-assets.prod.myninja.ai/22159002-02a6-42d7-952c-c55750532b33/0d98989e-4ec1-45d2-aeef-9d1a8258c264_0.jpeg"
+                 alt="Hero Image" class="rounded-lg object-cover h-full w-full "
+            />
+        </div>
+    </div>
+
 </section>
 
 <!-- Features Section -->
