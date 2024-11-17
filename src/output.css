@@ -2264,10 +2264,6 @@ details.collapse summary::-webkit-details-marker {
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -2278,6 +2274,10 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .grow {
@@ -2563,12 +2563,8 @@ details.collapse summary::-webkit-details-marker {
     display: block;
   }
 
-  .lg\:h-full {
-    height: 100%;
-  }
-
-  .lg\:w-full {
-    width: 100%;
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:flex-1 {
