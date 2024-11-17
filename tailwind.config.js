@@ -8,6 +8,7 @@ export default {
 
         pink: {
           500: '#ec4899',
+          300: '#f9a8d4'
         },
 
         purple: {
