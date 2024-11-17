@@ -4,12 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        burgundy: {
-          50: '#fdf2f4',
-          100: '#fde6e9',
-          800: '#800020',
-          900: '#600018',
+        primary: '#ffffff',
+
+        pink: {
+          500: '#ec4899',
         },
+
+        purple: {
+          300: '#d8b4fe',
+        }
       },
     },
   },

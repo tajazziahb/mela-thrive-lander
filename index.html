@@ -4,36 +4,51 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vite App</title>
     <link href="src/output.css" rel="stylesheet">
 </head>
 <body>
 <div id="app"></div>
+
 <!-- Navigation -->
-<nav class="navbar px-6 py-4 shadow-sm">
-    <div class="navbar-start">
-        <div class="flex items-center">
-            <img src="https://static.wixstatic.com/media/53d0e8_ad8b1c4d2697492095af4202f9e4b81f~mv2.png"
-                 class="w-8 h-8"></img>
-            <span class="ml-2 text-2xl font-bold text-burgundy-800">MelaThrive</span>
-        </div>
-    </div>
-    <div class="flex flex-1 justify-end px-2">
-        <div class="flex items-stretch">
-            <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="font-bold text-burgundy-800"
-                     onclick="this.nextElementSibling.classList.toggle('hidden')">Menu
-                </div>
-                <ul class="menu hidden">
-                    <li><a href="#features" class=" font-bold text-yellow-600 hover:text-burgundy-800">Features</a></li>
-                    <li><a href="#how-it-works" class=" font-bold text-yellow-600 hover:text-burgundy-800">How It Works</a></li>
-                    <li><a href="#testimonials" class="font-bold text-yellow-600 hover:text-burgundy-800">Testimonials</a></li>
-                    <li><a href="#faqs" class="font-bold text-yellow-600 hover:text-burgundy-800">FAQs</a></li>
-                </ul>
+ <nav class="bg-primary p-4">
+        <div class="container mx-auto flex justify-between items-center">
+
+            <!-- Brand -->
+            <div class="text-black text-2xl font-bold">
+                MelaThrive
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-4 ">
+                <a href="#features" class="text-black hover:text-purple-300">Features</a>
+                <a href="#how-it-works" class="text-black hover:text-purple-300">How It Works</a>
+                <a href="#testimonials" class="text-black hover:text-purple-300">Testimonials</a>
+                <a href="#faqs" class="text-black hover:text-purple-300">FAQs</a>
+            </div>
+            <!-- Mobile Navigation Toggle Button-->
+            <div class="md:hidden">
+                <button id="nav-toggle" class="focus:outline-none">
+                    <svg class="text-black h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
-    </div>
-</nav>
+        <!-- Mobile Navigation Menu -->
+        <div id="nav-menu" class="hidden md:hidden">
+            <a href="#features" class="block text-black py-2 px-4 hover:bg-pink">Features</a>
+            <a href="#how-it-works" class="block text-black py-2 px-4 hover:bg-pink">How It Works</a>
+            <a href="#testimonials" class="block text-black py-2 px-4 hover:bg-pink">Testimonials</a>
+            <a href="#faqs" class="block text-black py-2 px-4 hover:bg-pink">FAQs</a>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 <!-- Hero Section -->
 <section class="hero min-h-[600px] bg-gradient-to-r from-burgundy-50 to-yellow-50">
