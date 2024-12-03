@@ -2479,4 +2479,40 @@ details.collapse summary::-webkit-details-marker {
   .lg\:justify-between {
     justify-content: space-between;
   }
+
+  /* Default box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ensure no horizontal overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%; /* Ensure container doesn't exceed the viewport width */
+    margin: 0 auto;  /* Center the container */
+    padding: 16px;   /* Add some padding if necessary */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Example responsive behavior */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Keep elements stacked vertically */
+}
+
+/* Media query for mobile view, if needed */
+@media (max-width: 768px) {
+    .content {
+        /* Adjust styles specifically for mobile, ensuring no overflow */
+    }
+}
 }
