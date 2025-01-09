@@ -20,7 +20,7 @@
     <nav class="bg-primary p-4 rounded-lg">
         <div class="container flex justify-between items-center">
             <!-- Brand -->
-            <h1 class="text-xl font-bold mb-3">
+            <h1 class="text-xl font-bold mb-3 ml-2 p-2">
                 <span class="text-black">Mela</span><span
                     class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Thrive
                 </span>
@@ -35,7 +35,8 @@
             </div>
             <!-- Mobile Navigation -->
             <div class="md:hidden">
-                <button id="nav-toggle" class="focus:outline-none">
+                <button id="nav-toggle" class="focus:outline-none"
+                        onclick="document.getElementById('nav-menu').classList.toggle('hidden')">
                     <svg class="text-black h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
